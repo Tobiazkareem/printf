@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%') /* if not % sign, write charater to stdout */
 		{
-			write(1, &format, 1);
+			write(1, format, 1);
 			write_character_number++;
 		}
 		else
@@ -69,11 +69,10 @@ int _print_string(char *string)
 
 	while (*string)
 	{
-		putchar(*string);
+		write(1, string, 1);
 		count_string++;
 		string++;
 	}
 
 	return (count_string);
 }
-
