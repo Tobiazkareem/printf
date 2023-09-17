@@ -24,8 +24,6 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++; /*move to next character */
-			if (*format == '\0') /* check for the end of the format string */
-				break;
 			if (*format == 'c') /* check if character is c, s or % */
 			{
 			character_c = va_arg(write_args_format, int);
@@ -35,15 +33,17 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				write_character_number += _print_string(va_arg(write_args_format, char *));
-		}
+			}
 			else if (*format == '%')
 			{
-				write(1, "%", 1);
+				write(1, format, 1);
 				write_character_number++;
 			}
 			else
 			{
-				write(1, &(format), 1); /* print the unknown character as-is */
+				write(1, "%", 1);
+				write_character_number++;
+				write(1, format, 1);
 				write_character_number++;
 			}
 		}
