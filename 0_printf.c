@@ -12,7 +12,7 @@ int _printf(const char *format, ...);
 int _printf(const char *format, ...)
 {
 	int write_character_number = 0;
-	char character_c;
+	char character_c, *string1;
 	va_list write_args_format;
 
 	va_start(write_args_format, format); /* set arguments into list */
@@ -34,11 +34,12 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				write_character_number += _print_string(va_arg(write_args_format, char *));
+				string1 = va_arg(write_args_format, char *);
+				write_character_number += _print_string(string1);
 		}
 			else if (*format == '%')
 			{
-				write(1, format, 1);
+				write(1, "%", 1);
 				write_character_number++;
 			}
 			else
