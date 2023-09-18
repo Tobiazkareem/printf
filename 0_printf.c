@@ -11,7 +11,7 @@ int _printf(const char *format, ...);
 
 int _printf(const char *format, ...)
 {
-	int write_character_number = 0;
+	int write_character_number = 0, integer_number;
 	char character_c, *string1;
 	va_list write_args_format;
 
@@ -41,6 +41,11 @@ int _printf(const char *format, ...)
 			{
 				write(1, "%", 1);
 				write_character_number++;
+			}
+			else if (*format == 'd' || *format == 'i')
+			{
+				integer_number = va_arg(write_args_format, int);
+				write_character_number += _print_integer(integer_number);
 			}
 			else
 			{
@@ -79,4 +84,29 @@ int _print_string(char *string)
 	}
 
 	return (count_string);
+}
+
+/**
+ * _print_integer - print integer
+ * @number1: integer to print
+ *
+ * Return: number of printed characters
+ */
+
+int _print_integer(int number1)
+{
+	/* declare variable */
+	int integer_count1 = 0;
+	int count1;
+	char buffer[12]; /* buffer for holding integer as a string */
+
+	snprintf(buffer, sizeof(buffer), "%d", number1);
+
+	for (count1 = 0; buffer[count1] != '\0'; count1++)
+	{
+		write(1, &buffer[count1], 1);
+		integer_count1++;
+	}
+
+	return (integer_count1);
 }
