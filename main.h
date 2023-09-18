@@ -14,6 +14,7 @@
  */
 
 int _printf(const char *format, ...);
+int _print_string(char *string);
 int int_print(va_list argument);
 int string_print(va_list argument);
 int print_character(va_list argument);
