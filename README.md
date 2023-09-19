@@ -14,3 +14,5 @@ You don’t have to handle precision
 You don’t have to handle the length modifiers
 Task 0
 Write a function that produces output according to a format.
+Task 1
+Handle the conversion specifiers
