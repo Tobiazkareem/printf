@@ -1,3 +1,5 @@
+This is a printf  project by two team.
+
 Write a function that produces output according to a format.
 
 Prototype: int _printf(const char *format, ...);
