@@ -27,4 +27,6 @@ Handle custom conversion specifier s
 Task 6
 Handle conversion specifier p
 Task 7
-Handle flags for non custom conversion 
+Handle flags for non custom conversion
+Task 8
+Handling length modifiers for non custom conversion specifier 
