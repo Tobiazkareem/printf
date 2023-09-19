@@ -37,4 +37,6 @@ Handle precision for non custom conversion specifier
 Task 11
 Handle the 0 flag character for non custom conversion specifier
 Task 12
-Handle the - flag character for non custom conversion specifier 
+Handle the - flag character for non custom conversion specifier
+Task 13
+Print the reverse string 
