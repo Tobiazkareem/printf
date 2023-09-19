@@ -17,4 +17,6 @@ Write a function that produces output according to a format.
 Task 1
 Handle the conversion specifiers
 Task 2
-Handling custom conversion specifier b 
+Handling custom conversion specifier b
+Task 3
+Handling conversion specifier u, o, x, X 
