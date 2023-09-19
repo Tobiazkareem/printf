@@ -1,5 +1,7 @@
 This is a printf  project by two team.
 
+Task 0 and 1 is completed before the first deadline.
+
 Write a function that produces output according to a format.
 
 Prototype: int _printf(const char *format, ...);
