@@ -33,4 +33,6 @@ Handling length modifiers for non custom conversion specifier
 Task 9
 Handle field width for non custom conversion specifier
 Task 10
-Handle precision for non custom conversion specifier 
+Handle precision for non custom conversion specifier
+Task 11
+Handle the 0 flag character for non custom conversion specifier 
