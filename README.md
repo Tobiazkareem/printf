@@ -19,4 +19,6 @@ Handle the conversion specifiers
 Task 2
 Handling custom conversion specifier b
 Task 3
-Handling conversion specifier u, o, x, X 
+Handling conversion specifier u, o, x, X
+Task 4
+Use a local buffer 1024 to call write as little as possible 
