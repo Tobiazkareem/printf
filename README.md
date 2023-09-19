@@ -41,4 +41,6 @@ Handle the - flag character for non custom conversion specifier
 Task 13
 Print the reverse string
 Task 14
-prints the rot13'ed string 
+prints the rot13'ed string
+Task 15
+Combining the reverse string and the rot13'ed string 
